@@ -11,7 +11,7 @@ a{
 .content{
   margin:15px;
   padding: 0;
-  text-align: -webkit-auto;
+
 }
 
 /*   Main page   */
@@ -100,9 +100,10 @@ a{
 .info{
   font-size:20px;
   font-family: 'Roboto', sans-serif;
-  margin: 0 0 0 12.5px;
+  margin: 0 0 12.5px;
   font-weight:300;
   line-height:1.1;
+
   padding: 10px 4px 15px 6px;
 }
 
@@ -161,6 +162,8 @@ a{
   line-height: 1.1;
   background-color: lightgray;
   letter-spacing: 1px;
+  margin:-1px;
+
 }
 .gimage{
   display: flex;
@@ -181,8 +184,33 @@ a{
   display:flex;
   justify-content:center;
 
-}
 
+}
+/*           InterView       */
+.tag{
+  font-family: 'Raleway', sans-serif;
+  font-size: 85px;
+}
+.andy{
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: -webkit-fill-available;
+  height: auto;
+}
+.response{
+  text-align: -webkit-center;
+  font-size: 22px;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Rokkitt', serif;
+  margin: 13px 40px 19px 40px;
+}
+.quotes{
+  font-size: 35px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 300;
+}
 
 
 
@@ -250,11 +278,33 @@ a{
     text-align: justify;
     padding: 3px 5px 15px 5px;
   }
+  /*Interview*/
+  .response{
+    font-size: 21px;
+    margin: 9px 13px 15px 13px;
+    text-align: center;
+    padding: 9px 5px 0 5px;
+  }
+  .quotes{
+    font-size: 30px;
+    padding: 20px 20px 10px 20px;
+    margin: 0px 13px 0 13px;
+    border-bottom: black solid 1px;
+  }
+  .tag{
+    font-size: 53px;
+    padding: 3px;
+
+  }
 }
 
 @media only screen and (min-width:1200px){
-  .gimage , .imgSkate {
+  .gimage {
     width: 1200px;
+    display: inline-block;
+  }
+  .imgSkate{
+    width: 500px;
     display: inline-block;
   }
   .content{
@@ -262,9 +312,11 @@ a{
   }
   .ginfo{
     display: inline-block;
+    margin:-3px;
   }
-  .imgInfo .info {  width: 1200px;
-  display: inline-block;
+  .imgInfo .info {
+    width: 1200px;
+    display: inline-block;
   }
   /*Home*/
   .lady-surfer  , .oldSurfer  {
@@ -278,5 +330,21 @@ a{
   }
   .welcomeInfo h1{
     font-size: 63px;
+  }
+  /*Interview*/
+  .andy{
+    width:1000px;
+    display: inline-block;
+    padding:20px;
+  }
+  .tag{
+    padding:40px;
+  }
+  .response{
+    font-size: 39px;
+    margin: 0 70px 70px 70px;
+  }
+  .quotes{
+    font-size:65px;
   }
 }

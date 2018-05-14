@@ -36,7 +36,7 @@ class Navbar extends Component {
           <Link to="/about"> About us</Link>
           </div>
           <div className="navLink">
-          <Link to="/news"> News</Link>
+          <Link to="/news"> Interview</Link>
           </div>
           <div  className="navLink" >
             <Link to="/gallery"> Wave</Link>
