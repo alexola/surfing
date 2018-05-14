@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+a{
+  text-decoration: none;
+  color:currentColor;padding: 0px 16px 0px 16px;
+}
+.content{
+  margin:15px;
+  padding: 0;
+  text-align: -webkit-auto;
+}
+
+/*   Main page   */
+
+.surfCanary{
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+  height: auto;
+  border: black solid 7px;
+
+}
+.welcomeInfo{
+  border-bottom: gray solid 2px;
+  display: flow-root;
+  letter-spacing: 3px;
+  padding: 10px 13px;
+  margin: 40px;
+}
+
+.oldSurfer{
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+  filter:sepia(1);
+}
+.welcomeInfo h2{
+  color: #00BBF0;
+  font-weight: 500;
+}
+.lady-surfer{
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: -webkit-fill-available;
+  height: auto;
+}
+
+
+/*+++   NavBar     ++++*/
+.navBar{
+  display: flex;
+  background-color: #46ACC2;
+  padding: 16px;
+  color:white;
+}
+.navBar-items{
+  display: flex;
+}
+.navLink{
+  padding-right: 10px;
+}
+.navBar-itemsRight{
+  margin-left: auto;
+}
+.navLink-toggle{
+  display: none;
+}
+.fa{
+  transition: transform .2s;
+}
+.fa:hover{
+  transform: scale(1.5);
+}
+
+/***    About     ***/
+
+.mainTitle{
+  font-size:120px;
+  display:flex;
+  justify-content:center;
+
+
+}
+
+.title{
+  font-size:50px;
+  font-family: 'Helvetica Neue';
+  font-weight:300;
+  display:flex;
+  justify-content:left;
+  color:#3d3d3d;
+
+}
+
+.info{
+  font-size:20px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 0 0 12.5px;
+  font-weight:300;
+  line-height:1.1;
+  padding: 10px 4px 15px 6px;
+}
+
+
+.mainImage img {
+  width:100%;
+  height: auto;
+
+}
+.pjimage{
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+  height: auto;
+  border-radius: 0px 100px 0px 100px;
+}
+.imgSkate{
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: -webkit-fill-available;
+  height: auto;
+}
+
+/**    Gallery    ****/
+
+.gmainTitle{
+  font-size:120px;
+  border: white solid 1px;
+  border-radius:2px;
+  display:flex;
+  justify-content:center;
+  font-family: Anton;
+  font-weight:200;
+  background-color:#ff1a1a;
+  text-shadow: 2px 1px white;
+}
+
+.gtitle{
+  font-size:50px;
+  font-family: 'Helvetica Neue';
+  font-weight:320;
+  display:flex;
+  justify-content:left;
+  color:#808080;
+  background-color: black;
+  padding: 15px 10px 15px 20px;
+  margin-bottom: 0;
+}
+
+.ginfo{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 10px 20px;
+  line-height: 1.1;
+  background-color: lightgray;
+  letter-spacing: 1px;
+}
+.gimage{
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+  height: auto;
+
+
+}
+.author{
+  font-family:'Robot',sans-serif;
+  font-weight:200;
+  color:#4d4d4d;
+  text-shadow:1px 1px #4d4d4d;
+  font-size:18px;
+}
+.gconcept{
+  display:flex;
+  justify-content:center;
+
+}
+
+
+
+
+/*Mobile*/
+@media only screen and (max-width: 768px){
+  .navBar-items,
+  .navBar{
+    flex-direction: column;
+  }
+  .navBar-items{
+    display: none;
+  }
+  .navBar-itemsRight{
+    margin-left: 0;
+  }
+  .navLink-toggle{
+    display: initial;
+    align-self: flex-end;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  /*About*/
+  .mainTitle{
+    font-size: 50px;
+  }
+  .title{
+    font-size:25px;
+  }
+  .info{
+    font-size:18px;
+    display:block;
+  }
+
+/* Gallery*/
+.gmainTitle{
+    font-size: 50px;
+    color:white;
+    text-shadow: 2px 3px #b30000;
+  }
+  .gtitle{
+    font-size:25px;
+    color: #808080;
+
+  }
+  .ginfo{
+    font-size:18px;
+
+  }
+  .content{
+    display: contents;
+  }
+  /*Home*/
+  .welcomeInfo{
+    margin: 0px;
+    padding: 0;
+  }
+  .welcomeInfo h1{
+    font-size: 26px;
+  }
+  .welcomeInfo p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 10px 3px 5px 3px;
+    text-align: justify;
+    padding: 3px 5px 15px 5px;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .gimage , .imgSkate {
+    width: 1200px;
+    display: inline-block;
+  }
+  .content{
+    display: contents;
+  }
+  .ginfo{
+    display: inline-block;
+  }
+  .imgInfo .info {  width: 1200px;
+  display: inline-block;
+  }
+  /*Home*/
+  .lady-surfer  , .oldSurfer  {
+    width: 1200px;
+    display: inline-block;
+  }
+  .welcomeInfo p{
+    font-size: 26px;
+    width: 1200px;
+    display: inline-block;
+  }
+  .welcomeInfo h1{
+    font-size: 63px;
+  }
+}
