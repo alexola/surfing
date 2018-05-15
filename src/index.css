@@ -49,7 +49,13 @@ a{
   width: -webkit-fill-available;
   height: auto;
 }
-
+.homeText{
+  padding: 10px 13px 46px 12px;
+}
+.surfT{
+  font-size:93px;
+  text-shadow: #0e83d2 -3px 7px 3px;
+}
 
 /*+++   NavBar     ++++*/
 .navBar{
@@ -205,6 +211,7 @@ a{
   -webkit-font-smoothing: antialiased;
   font-family: 'Rokkitt', serif;
   margin: 13px 40px 19px 40px;
+  padding-bottom: 60px;
 }
 .quotes{
   font-size: 35px;
@@ -268,8 +275,8 @@ a{
     margin: 0px;
     padding: 0;
   }
-  .welcomeInfo h1{
-    font-size: 26px;
+  .surfT{
+    font-size: 41px;
   }
   .welcomeInfo p {
     font-size: 14px;
@@ -319,17 +326,21 @@ a{
     display: inline-block;
   }
   /*Home*/
+  .surfT{
+      font-size: 135px;
+  }
   .lady-surfer  , .oldSurfer  {
     width: 1200px;
     display: inline-block;
   }
   .welcomeInfo p{
     font-size: 26px;
-    width: 1200px;
+    width: 1100px;
     display: inline-block;
-  }
-  .welcomeInfo h1{
-    font-size: 63px;
+    text-align: center;
+    margin: 16px 10px 20px 0px;
+    padding:3px 5px 15px 5px;
+
   }
   /*Interview*/
   .andy{
@@ -341,10 +352,10 @@ a{
     padding:40px;
   }
   .response{
-    font-size: 39px;
+    font-size: 26px;
     margin: 0 70px 70px 70px;
   }
   .quotes{
-    font-size:65px;
+    font-size:55px;
   }
 }

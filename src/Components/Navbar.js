@@ -10,16 +10,6 @@ import {
 class Navbar extends Component {
 
 
-  componentDidMount(){
-
-  //   ClassToggle()
-  //     const navs = document.querySelectorAll('.navBar-items')
-  //     navs.forEach(nav => nav.classList.toggle('navbar-ToggleShow') );
-  //
-  // document.querySelector('.navLink-toggle')
-  //   .addEventListener('click', ClassToggle);
-  }
-
 
   render() {
     return (
@@ -28,7 +18,7 @@ class Navbar extends Component {
           <div className="nav-Container">
             <div className="Nav-title"> <Link to="/">L-Ondulation</Link> </div>
           </div>
-          <div className="navLink navLink-toggle">
+          <div className="navLink navLink-toggle" >
             <i className="mediaIcons" class="fa fa-bars"></i>
           </div>
           <nav className="navBar-items">
