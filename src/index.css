@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+
 
 }
 a{
@@ -26,6 +26,7 @@ a{
 }
 .welcomeInfo{
   border-bottom: gray solid 2px;
+  font-family: 'Roboto', sans-serif;
   display: flow-root;
   letter-spacing: 3px;
   padding: 10px 13px;
@@ -41,6 +42,7 @@ a{
 .welcomeInfo h2{
   color: #00BBF0;
   font-weight: 500;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .lady-surfer{
   display: flex;
@@ -109,7 +111,6 @@ a{
   margin: 0 0 12.5px;
   font-weight:300;
   line-height:1.1;
-
   padding: 10px 4px 15px 6px;
 }
 
@@ -209,7 +210,7 @@ a{
   font-size: 22px;
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Rokkitt', serif;
+  font-family: 'Roboto', sans-serif;
   margin: 13px 40px 19px 40px;
   padding-bottom: 60px;
 }
